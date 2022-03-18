@@ -95,7 +95,7 @@ body {
 .card .info .q img {
   margin-right: 5%;
 }
-.card .info .active {
+.card .info .q:hover {
   cursor: pointer;
   color: #f47c57;
 }
