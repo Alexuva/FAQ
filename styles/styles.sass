@@ -1,0 +1,203 @@
+/*COLORS*/
+$DarkBlue : hsl(238, 29%, 16%)
+$SoftRed : hsl(14, 88%, 65%)
+
+/*FONTS*/
+@font-face 
+    font-family: 'Kumbh-Bold'
+    src: url(fonts/KumbhSans-Bold.ttf)
+
+@font-face 
+    font-family: 'Kumbh-Regular'
+    src: url(fonts/KumbhSans-Regular.ttf)
+
+
+/*RESET STYLES*/
+
+*
+    margin: 0px 
+    padding: 0px
+    box-sizing: border-box
+
+/*BODY*/
+body
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: linear-gradient(#AE68EA,#6563E7)
+    background-repeat: no-repeat
+
+/*CONTENEDOR*/
+
+.card
+    position: relative
+    display: flex
+    flex-direction: row
+    width: 938px
+    height: 532px
+    background: white
+    border-radius: 25px
+
+
+    .cube
+        position: absolute
+        top: 43%
+        left: -9.6%
+        z-index: 1
+
+    .pic 
+        width: 50%
+        height: 100%
+        overflow: hidden
+ 
+
+        background-image: url(../images/bg-pattern-desktop.svg)
+        background-size: 1020px
+        background-repeat: no-repeat
+        background-position-x: 114%
+        background-position-y: 66%
+
+    
+        .picD
+            position: relative
+            top: 17%
+            left: -16.5%
+        
+        .picM
+            display: none
+
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 50%
+        height: 100%
+        padding-right: 6%
+
+
+        h1
+            width: 87%
+            height: 8%
+            margin-bottom: 10%
+            font-family: 'Kumbh-Bold'
+            font-size: 40px
+            color: $DarkBlue
+    
+        .q
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            padding-top: 1%
+            width: 87%
+            min-height: 8%
+            max-height: 25%
+            font-family: 'Kumbh-Regular'
+            line-height: 100%
+            margin-bottom: 4%
+            border-bottom:  1px solid hsl(240, 5%, 91%)
+
+            img
+                margin-right: 5%
+            
+        .active
+            cursor: pointer
+            color: $SoftRed
+
+        .a
+            display: none
+            margin-top: 2.5%
+                
+
+           
+        
+          
+
+@media ( max-width: 1023px )
+    body
+        width: 100%
+
+    .card
+        width: 80%
+        height: 80%
+        margin-top: 15%
+        flex-direction: column
+
+        .cube 
+            display: none
+
+        .pic
+            overflow: visible
+            width: 100%
+            height: 27%
+
+            background-image: url(../images/bg-pattern-mobile.svg)
+            background-size: 44%
+            background-position-y: 1%
+            background-position-x: 50%
+
+            .picD
+                display: none
+            .picM
+                display: block
+                position: absolute
+                width: 44%
+                bottom: 83%
+                left: 28%
+                z-index: 1
+
+        .info
+            width: 100%
+            height: 80%
+            padding: 0%
+            justify-content: flex-start
+            align-content: center
+
+            h1  
+                height: 12%
+                margin: 0
+                text-align: center
+            .q
+                margin-top: 1%
+
+@media (max-width: 868px)
+    .card .pic .picM
+        bottom: 85%
+
+@media (max-width: 795px)
+    .card .pic .picM
+        bottom: 87%
+
+@media (max-width: 722px)
+    .card .pic 
+        background-size: 50%
+        height: 22%
+    
+        .picM
+            width: 50%
+            left: 25%
+
+@media ( max-width: 565px)
+    .card
+        margin-top: 30%
+        width: 85%
+
+        .pic
+            height: 20%
+            background-size: 80%
+        
+            .picM
+                width: 80%
+                left: 10%
+        
+        .info .q
+            height: 15%
+            margin-top: 1%
+
+            
+            img
+                margin-right: 0%
