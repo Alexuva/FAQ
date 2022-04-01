@@ -8,5 +8,5 @@ Se debe realizar un diseño lo más parecido al mostrado a continuación respons
 
 ![mobile-design](https://user-images.githubusercontent.com/16647012/159075059-2a4f7b01-9073-4b56-92e7-0b072fbec756.jpg)
 
-## Solución (temporal)
+## Solución
 https://faq-green.vercel.app/
