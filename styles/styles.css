@@ -99,9 +99,15 @@ body {
   cursor: pointer;
   color: #f47c57;
 }
+.card .info .bold {
+  font-weight: bold;
+}
 .card .info .a {
   display: none;
   margin-top: 2.5%;
+}
+.card .info .active {
+  display: block;
 }
 
 @media (max-width: 1023px) {
@@ -177,7 +183,7 @@ body {
 @media (max-width: 565px) {
   .card {
     margin-top: 30%;
-    width: 85%;
+    width: 90%;
   }
   .card .pic {
     height: 20%;
@@ -187,12 +193,20 @@ body {
     width: 80%;
     left: 10%;
   }
+  .card .info {
+    height: 85%;
+  }
   .card .info .q {
+    width: 95%;
     height: 15%;
     margin-top: 1%;
+    font-size: 0.95em;
   }
   .card .info .q img {
     margin-right: 0%;
+  }
+  .card .info .q .a {
+    font-size: 0.9em;
   }
 }
 

@@ -107,15 +107,17 @@ body
         .q:hover
             cursor: pointer
             color: $SoftRed
+        
+        .bold
+            font-weight: bold
 
         .a
             display: none
             margin-top: 2.5%
-                
 
-           
-        
-          
+        .active
+            display: block
+                
 
 @media ( max-width: 1023px )
     body
@@ -184,7 +186,7 @@ body
 @media ( max-width: 565px)
     .card
         margin-top: 30%
-        width: 85%
+        width: 90%
 
         .pic
             height: 20%
@@ -193,11 +195,18 @@ body
             .picM
                 width: 80%
                 left: 10%
-        
+        .info
+            height: 85%
+
         .info .q
+            width: 95%
             height: 15%
             margin-top: 1%
+            font-size: 0.95em
 
             
             img
                 margin-right: 0%
+
+        .info .q .a
+                font-size: 0.9em
